@@ -1,20 +1,428 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Home</title>
-        <%- include("./partials/head.ejs") %>
-    </head>
-    <body>
-        <div class="wrapper">
-            <%- include("./partials/header.ejs") %>
-            <main>
-                <h1>Home</h1>
-                <img src="./img/img-01.jpg" alt="" />
-            </main>
-            <%- include("./partials/footer.ejs") %>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomePage</title>
+    <%- include("./partials/head.ejs") %>
+  </head>
+  <body>
+    <!-- top-banner -->
+    <div class="top-banner">
+      <div class="container">
+        <p>
+          Sign up and get 20% off to your first order.
+          <a href="">Sign Up Now</a>
+        </p>
+      </div>
+    </div>
+    <!-- header -->
+    <%- include("./partials/header.ejs") %>
+
+    <main>
+      <!-- banner -->
+      <section class="banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-md-12 left-content">
+              <p class="intro">FIND CLOTHES THAT MATCHES YOUR STYLE</p>
+
+              <p class="note">
+                Browse through our diverse range of meticulously crafted
+                garments, designed to bring out your individuality and cater to
+                your sense of style.
+              </p>
+
+              <button type="button" class="btn btn-black">
+                <p>Shop now</p>
+              </button>
+
+              <div class="report">
+                <div class="data">
+                  <h3>200+</h3>
+                  <p>International Brands</p>
+                </div>
+                <div class="data">
+                  <h3>2,000+</h3>
+                  <p>High-Quality Products</p>
+                </div>
+                <div class="data">
+                  <h3>30,000+</h3>
+                  <p>Happy Customers</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-12">
+              <img class="img-banner" src="/img/banner.png" alt="" />
+            </div>
+          </div>
         </div>
-        <script type="module" src="./main.js"></script>
-    </body>
+      </section>
+      <!-- brands  -->
+      <section class="brands">
+        <div class="container">
+          <div class="row">
+            <ul class="col brand">
+              <li>VERSACE</li>
+              <li>ZARA</li>
+              <li>GUCCI</li>
+              <li>PRADA</li>
+              <li>Calvin Klein</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- new arrivals -->
+      <section class="container">
+        <!-- title -->
+        <div class="row">
+          <div class="col-12">
+            <p class="title">new arrivals</p>
+          </div>
+        </div>
+        <!-- list product -->
+        <div class="g-1 row rows-4 rows-lg-3 rows-md-2">
+          <!-- sp1 -->
+          <div class="col">
+            <a href="./productDetail.html" class="product-card">
+              <div class="img-product">
+                <img src="/img/detail-product/detail-1.png" alt="" />
+              </div>
+              <p class="product-name">One Life Graphic T-shirt</p>
+              <div class="preview">
+                <div class="stars">
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                  <i
+                    class="fa-solid fa-star-half-stroke"
+                    style="color: #ffc633"></i>
+                </div>
+                <div class="score">4.5/5</div>
+              </div>
+              <div class="cost">
+                <span class="new">$260</span>
+                <span class="old">$300</span>
+                <span class="sale">-40%</span>
+              </div>
+            </a>
+          </div>
+          <!-- sp2 -->
+          <div class="col">
+            <a href="#" class="product-card">
+              <div class="img-product">
+                <img src="/img/product2.png" alt="" />
+              </div>
+              <p class="product-name">SKINNY FIT JEANS</p>
+              <div class="preview">
+                <div class="stars">
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                  <i
+                    class="fa-solid fa-star-half-stroke"
+                    style="color: #ffc633"></i>
+                </div>
+                <div class="score">3.5/5</div>
+              </div>
+              <div class="cost">
+                <span class="new">$240</span>
+                <span class="old">$260</span>
+              </div>
+            </a>
+          </div>
+          <!-- sp3 -->
+          <div class="col d-md-none">
+            <a href="#" class="product-card">
+              <div class="img-product">
+                <img src="/img/product3.png" alt="" />
+              </div>
+              <p class="product-name">CHECKERED SHIRT</p>
+              <div class="preview">
+                <div class="stars">
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                  <i
+                    class="fa-solid fa-star-half-stroke"
+                    style="color: #ffc633"></i>
+                </div>
+                <div class="score">4.5/5</div>
+              </div>
+              <div class="cost">
+                <span class="new">$180</span>
+                <span class="old"></span>
+              </div>
+            </a>
+          </div>
+          <!-- sp4 -->
+          <div class="col d-md-none">
+            <a href="#" class="product-card">
+              <div class="img-product">
+                <img src="/img/product4.png" alt="" />
+              </div>
+              <p class="product-name">SLEEVE STRIPED T-SHIRT</p>
+              <div class="preview">
+                <div class="stars">
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                  <i
+                    class="fa-solid fa-star-half-stroke"
+                    style="color: #ffc633"></i>
+                </div>
+                <div class="score">4.5/5</div>
+              </div>
+              <div class="cost">
+                <span class="new">$130</span>
+                <span class="old"></span>
+                <span class="sale">-30%</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- button -->
+        <div class="row">
+          <div class="col-12">
+            <button class="btn btn-white">
+              <p>View all</p>
+            </button>
+          </div>
+        </div>
+        <hr class="horizon-line" />
+
+        <!-- top selling -->
+        <div class="row">
+          <div class="col-12">
+            <p class="title">top selling</p>
+          </div>
+        </div>
+        <!-- list product -->
+        <div class="g-1 row rows-4 rows-lg-3 rows-md-2">
+          <!-- sp5 -->
+          <div class="col">
+            <a href="#" class="product-card">
+              <div class="img-product">
+                <img src="/img/product5.png" alt="" />
+              </div>
+              <p class="product-name">VERTICAL STRIPED SHIRT</p>
+              <div class="preview">
+                <div class="stars">
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                </div>
+                <div class="score">5.0/5</div>
+              </div>
+              <div class="cost">
+                <span class="new">$212</span>
+                <span class="old">$232</span>
+                <span class="sale">-20%</span>
+              </div>
+            </a>
+          </div>
+          <!-- sp6 -->
+          <div class="col">
+            <a href="#" class="product-card">
+              <div class="img-product">
+                <img src="/img/product6.png" alt="" />
+              </div>
+              <p class="product-name">COURAGE GRAPHIC T-SHIRT</p>
+              <div class="preview">
+                <div class="stars">
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                </div>
+                <div class="score">4.0/5</div>
+              </div>
+              <div class="cost">
+                <span class="new">$145</span>
+                <span class="old"></span>
+              </div>
+            </a>
+          </div>
+          <!-- sp7 -->
+          <div class="col d-md-none">
+            <a href="#" class="product-card">
+              <div class="img-product">
+                <img src="/img/product7.png" alt="" />
+              </div>
+              <p class="product-name">LOOSE FIT BERMUDA SHORTS</p>
+              <div class="preview">
+                <div class="stars">
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                </div>
+                <div class="score">3.0/5</div>
+              </div>
+              <div class="cost">
+                <span class="new">$80</span>
+                <span class="old"></span>
+              </div>
+            </a>
+          </div>
+          <!-- sp8 -->
+          <div class="col d-md-none">
+            <a href="#" class="product-card">
+              <div class="img-product">
+                <img src="/img/product8.png" alt="" />
+              </div>
+              <p class="product-name">FADED SKINNY JEANS</p>
+              <div class="preview">
+                <div class="stars">
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                  <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                  <i
+                    class="fa-solid fa-star-half-stroke"
+                    style="color: #ffc633"></i>
+                </div>
+                <div class="score">4.5/5</div>
+              </div>
+              <div class="cost">
+                <span class="new">$210</span>
+                <span class="old"></span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- button -->
+        <div class="row">
+          <div class="col-12">
+            <button class="btn btn-white"><p>View all</p></button>
+          </div>
+        </div>
+      </section>
+      <!-- types -->
+      <section class="container types">
+        <div class="row">
+          <div class="col-12">
+            <p class="title">BROWSE BY dress STYLE</p>
+          </div>
+        </div>
+        <div class="g-2 row">
+          <div class="col-4 col-md-12">
+            <div class="card-type">
+              <div class="type-name">Casual</div>
+              <img src="/img/product9.png" alt="" />
+            </div>
+          </div>
+          <div class="col-8 col-md-12">
+            <div class="card-type">
+              <div class="type-name">Formal</div>
+              <img src="/img/product10.png" alt="" />
+            </div>
+          </div>
+          <div class="col-8 col-md-12">
+            <div class="card-type">
+              <div class="type-name">Party</div>
+              <img src="/img/product11.png" alt="" />
+            </div>
+          </div>
+          <div class="col-4 col-md-12">
+            <div class="card-type">
+              <div class="type-name">Gym</div>
+              <img src="/img/product12.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Customers preview -->
+      <section class="container customer-preview">
+        <div class="row">
+          <div class="col-10">
+            <div class="title title-left">our happy customer</div>
+          </div>
+          <div class="col-2">
+            <div class="more">
+              <button type="button">
+                <i class="fa-solid fa-arrow-left-long"></i>
+              </button>
+              <button type="button">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="g-2 row rows-3 rows-md-1">
+          <div class="col">
+            <div class="card-preview">
+              <div class="stars">
+                <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                <i class="fa-solid fa-star" style="color: #ffc633"></i>
+              </div>
+              <div class="customer-info">
+                <p class="name">Sarah M.</p>
+                <i class="fa-solid fa-circle-check" style="color: #01ab31"></i>
+              </div>
+              <p class="preview">
+                "I'm blown away by the quality and style of the clothes I
+                received from Shop.co. From casual wear to elegant dresses,
+                every piece I've bought has exceeded my expectations.”
+              </p>
+            </div>
+          </div>
+          <div class="col d-md-none">
+            <div class="card-preview">
+              <div class="stars">
+                <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                <i class="fa-solid fa-star" style="color: #ffc633"></i>
+              </div>
+              <div class="customer-info">
+                <p class="name">Alex K.</p>
+                <i class="fa-solid fa-circle-check" style="color: #01ab31"></i>
+              </div>
+              <p class="preview">
+                "Finding clothes that align with my personal style used to be a
+                challenge until I discovered Shop.co. The range of options they
+                offer is truly remarkable, catering to a variety of tastes and
+                occasions.”
+              </p>
+            </div>
+          </div>
+          <div class="col d-md-none">
+            <div class="card-preview">
+              <div class="stars">
+                <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                <i class="fa-solid fa-star" style="color: #ffc633"></i>
+                <i class="fa-solid fa-star" style="color: #ffc633"></i>
+              </div>
+              <div class="customer-info">
+                <p class="name">James L.</p>
+                <i class="fa-solid fa-circle-check" style="color: #01ab31"></i>
+              </div>
+              <p class="preview">
+                "As someone who's always on the lookout for unique fashion
+                pieces, I'm thrilled to have stumbled upon Shop.co. The
+                selection of clothes is not only diverse but also on-point with
+                the latest trends.”
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%- include("./partials/footer.ejs") %>
+
+    <script type="module" src="./main.js"></script>
+  </body>
 </html>
